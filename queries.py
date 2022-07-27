@@ -1,7 +1,7 @@
 from conexaoDB import *
 
 
-def ler_todos_usuarios(bd):
+def ler_todos_alunos(bd):
     return ler_bd(bd, "SELECT * FROM Aluno")
 
 

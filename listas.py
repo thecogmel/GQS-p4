@@ -4,7 +4,7 @@ from xml.dom.minidom import Element
 def menor_elemento_lista(lista):
     for elemento in lista:
         if type(elemento) not in [int, float]:
-            raise TypeError("O valor do elemento deve ser um número real ou inteiro")
+            raise TypeError("O valor do elemento deve ser um número real ou inteiros")
     for i in range(len(lista)):
         if i == 0:
             menor_elemento = lista[i]

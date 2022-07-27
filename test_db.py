@@ -19,7 +19,7 @@ class TestDB(MockBD):
             (8, "Alice"),
         ]
         self.assertEqual(
-            ler_todos_usuarios(self.mock_db_config.get("bd")), retorno_esperado
+            ler_todos_alunos(self.mock_db_config.get("bd")), retorno_esperado
         )
 
 
