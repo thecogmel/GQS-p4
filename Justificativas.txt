@@ -1,6 +1,0 @@
-Sem banco:
-    Escolhemos as propostas 1, 2 e 3 pelo fato de trablhar com operações matemáticas. Primeiro teste foi aplicado apenas comparação básica
-    e os demais, fazendo comparativos aliados a laços de repetição testando com auxílio de operação matemáticas as funções básicas da aplicação.
-
-Com o banco:
-    Definimos o teste 1 e 3 pelo o acesso de queries com SELECT ao banco. E por favor lembre da questão da query de filtro por busca de nome <3 

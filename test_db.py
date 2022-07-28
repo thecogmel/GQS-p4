@@ -7,7 +7,13 @@ from queries import *
 
 
 class TestDB(MockBD):
-    def test_select_all(self):
+    def test_all_class_of_Carla(self):
+        retorno_esperado = [(1,), (3,)]
+        self.assertEqual(
+            ler_turma_Carla(self.mock_db_config.get("bd")), retorno_esperado
+        )
+
+    def test_select_all_02(self):
         retorno_esperado = [
             (1, "Carla F"),
             (2, "Danilo"),
@@ -22,22 +28,8 @@ class TestDB(MockBD):
             ler_todos_alunos(self.mock_db_config.get("bd")), retorno_esperado
         )
 
-
-"""     def test_filtro_nome(self):
-        retorno_esperado = [(1, "Carla F.", "c@c.com")]
-        print(
-            ler_usuario_nome(self.mock_db_config.get("bd"), "Carla F."),
-        )
+    def test_geography_class_03(self):
+        retorno_esperado = [("Tads01", 1), ("Tads02", 1)]
         self.assertEqual(
-            ler_usuario_nome(self.mock_db_config.get("bd"), "Carla F."),
-            retorno_esperado,
+            ler_turmas_geografia(self.mock_db_config.get("bd")), retorno_esperado
         )
-
-    def test_order_by(self):
-        retorno_esperado = [
-            (3, "sabonete", 8569, "higiene", 2, 5),
-            (4, "leite", 5214, "laticinios", 5, 4),
-            (2, "agua sanitaria", 3211, "limpeza", 7.5, 2),
-            (1, "sabao", 5598, "limpeza", 20.00, 3),
-        ]
-        self.assertEqual(ler_produtos(self.mock_db_config.get("bd")), retorno_esperado) """
